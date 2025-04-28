@@ -15,6 +15,6 @@ and No Tumor. The system utilizes four powerful models — CNN, VGG16, Hybrid CN
 and MobileNet — to explore and compare their effectiveness.
 
 The significance of early brain tumor detection cannot be overstated,
- as it directly impacts patient prognosis and treatment planning.
-  This project aims to bridge the gap between clinical diagnosis and
-   AI-based assistance by delivering a reliable, accurate, and fast prediction system.
+as it directly impacts patient prognosis and treatment planning.
+This project aims to bridge the gap between clinical diagnosis and
+AI-based assistance by delivering a reliable, accurate, and fast prediction system.

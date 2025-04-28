@@ -12,7 +12,7 @@ and effectiveness in extracting high-level semantic features from images.
 Hybrid CNN + LSTM architectures combine the spatial feature extraction
 of CNNs with the temporal learning capabilities of LSTMs, enhancing model generalization on complex datasets.
 
-MobileNet architectures focus on creating lightweight models suitable for
+MobileNet architectures focus on creating lightweight models suitable for 
 mobile and embedded applications without significant compromises in accuracy.
 
 Previous works have also shown that data augmentation, proper preprocessing,
