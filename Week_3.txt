@@ -1,0 +1,19 @@
+LITERATURE REVIEW
+
+Several studies have indicated the superiority of deep learning models
+over traditional machine learning techniques in medical imaging tasks:
+
+CNNs have been widely used for image classification tasks,
+automatically learning hierarchical features from raw pixel data without manual feature engineering.
+
+VGG16, a deep convolutional network, gained popularity due to its simplicity
+and effectiveness in extracting high-level semantic features from images.
+
+Hybrid CNN + LSTM architectures combine the spatial feature extraction
+of CNNs with the temporal learning capabilities of LSTMs, enhancing model generalization on complex datasets.
+
+MobileNet architectures focus on creating lightweight models suitable for
+mobile and embedded applications without significant compromises in accuracy.
+
+Previous works have also shown that data augmentation, proper preprocessing,
+and transfer learning significantly boost the performance of classification models in brain MRI image datasets.

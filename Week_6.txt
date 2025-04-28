@@ -1,0 +1,33 @@
+METHODOLOGY
+
+The proposed methodology consists of the following steps:
+Data Collection and Preprocessing:
+
+Load MRI images and assign corresponding labels.
+Apply preprocessing like resizing images to 224x224 pixels.
+Normalize pixel values to the range [0, 1].
+Perform data augmentation (rotation, flipping, zooming) to prevent overfitting.
+
+Model Development:
+
+Build a CNN model with multiple convolutional, pooling, and dense layers.
+Fine-tune VGG16 and MobileNet using transfer learning.
+Construct Hybrid CNN + LSTM architecture for sequence modeling of spatial features.
+
+Model Training:
+
+Use Adam optimizer and categorical cross-entropy loss.
+Apply early stopping and model checkpoints.
+Train on 70% of the dataset, validate on 20%, and test on 10%.
+
+Evaluation:
+
+Evaluate models on unseen data.
+Calculate performance metrics.
+Compare models based on evaluation results and computational efficiency.
+
+Deployment:
+
+Export the final model.
+Integrate with a simple GUI (Graphical User Interface) for real-world application.
+This structured approach ensures thorough training, validation, and analysis of the implemented models.

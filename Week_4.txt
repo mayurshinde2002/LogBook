@@ -1,0 +1,68 @@
+PROPOSED SYSTEM
+
+The proposed system for Brain Tumour Detection is based on the application of various
+deep learning models to automatically classify MRI brain images. Our aim is to build
+a system that can assist radiologists by providing a second opinion and reducing diagnostic errors.
+
+The system follows a structured pipeline:
+
+Dataset Preparation:
+We use a publicly available brain MRI dataset categorized into four classes:
+Glioma Tumor, Meningioma Tumor, Pituitary Tumor, and No Tumor. Each image is preprocessed to
+enhance quality and resized to a uniform dimension to maintain consistency across inputs.
+
+Data Preprocessing:
+Preprocessing steps include normalization of pixel values,
+data augmentation (rotation, zoom, horizontal flip), and denoising filters.
+These techniques help in improving the robustness and generalization ability of models.
+
+Model Architecture:
+
+CNN Model: A custom-built CNN with multiple convolutional layers,
+pooling layers, ReLU activation functions, batch normalization, and dropout layers to prevent overfitting.
+
+VGG16 Model: Transfer learning approach using the pre-trained VGG16 model.
+We freeze the early layers and fine-tune the deeper layers to adapt the model to the MRI dataset.
+
+Hybrid CNN+LSTM Model: In this model, the CNN acts as a feature extractor,
+and the extracted feature maps are passed through an LSTM network to learn complex sequential dependencies between features.
+
+MobileNet Model: A lightweight, efficient model optimized for mobile and edge devices,
+suitable for real-time diagnosis applications.
+
+Training Phase:
+Models are trained using categorical cross-entropy as the loss function and Adam optimizer.
+Early stopping and model checkpointing are employed to avoid overfitting and retain the best-performing model.
+
+Testing and Validation:
+The dataset is split into training, validation, and testing sets (typically 70-20-10 ratio).
+Performance on the validation set is monitored during training to tune hyperparameters like learning rate, batch size, number of epochs, and optimizer type.
+
+Evaluation Metrics:
+Models are evaluated using Accuracy, Precision, Recall, F1-Score, and Confusion Matrix.
+Additionally, Receiver Operating Characteristic (ROC) curves and Area Under Curve (AUC) scores are analyzed for better understanding of model performance.
+
+Comparison and Analysis:
+After training all models, we perform a detailed comparison based on evaluation metrics,
+computational complexity, inference time, and memory consumption. This helps in selecting the best model for deployment.
+
+Deployment Considerations:
+The final system can be integrated into a user-friendly interface that allows
+clinicians to upload MRI images and receive instant predictions along with probability scores for each class.
+
+System Block Diagram:
+Input: MRI Image
+Preprocessing: Normalization, Augmentation
+Feature Extraction: CNN/VGG16/MobileNet
+Classification: Fully Connected Layers / LSTM layers
+Output: Tumor Type Prediction (Glioma, Meningioma, Pituitary, No Tumor)
+Advantages of Proposed System:
+Reduces diagnosis time significantly.
+Increases accuracy and consistency compared to manual diagnosis.
+Provides a scalable solution adaptable to various hospital setups.
+Capable of running on low-resource devices (especially with MobileNet).
+Challenges Addressed:
+Dealing with imbalanced datasets through augmentation and class weighting.
+Reducing overfitting using dropout, regularization, and early stopping techniques.
+Achieving real-time prediction speeds without sacrificing model performance.
+In conclusion, the proposed system is a complete end-to-end deep learning-based solution aimed at assisting medical professionals in brain tumor diagnosis using advanced machine learning techniques.

@@ -1,0 +1,23 @@
+IMPLEMENTATION OF SECOND MODULE (VGG16 MODEL)
+The second model was based on Transfer Learning using the VGG16 architecture:
+
+Process:
+
+Loaded pre-trained VGG16 model with ImageNet weights.
+Removed the top dense layers.
+Added custom dense layers for our 4-class classification.
+Used data augmentation during training for better generalization.
+
+Training Details:
+
+Frozen initial convolutional layers.
+Trained only the fully connected layers and final convolutional blocks.
+Optimizer: Adam with a lower learning rate (1e-4).
+
+Results:
+
+Achieved around 92-94% validation accuracy.
+Less overfitting observed compared to the custom CNN model.
+Fine-tuning further improved accuracy by 1-2%.
+Thus, VGG16 proved to be a strong performer for MRI classification tasks.
+

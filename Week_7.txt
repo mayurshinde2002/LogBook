@@ -1,0 +1,28 @@
+IMPLEMENTATION OF FIRST MODULE (CNN MODEL)
+The first model implemented was a custom-built Convolutional Neural Network (CNN). It included:
+
+Architecture:
+
+Input layer (224x224x3)
+Multiple convolutional layers with ReLU activatio
+Max pooling layers to reduce dimensionality
+Dense layers for classification
+Softmax output layer
+
+Training Details:
+
+Optimizer: Adam
+
+Loss Function: Categorical Crossentropy
+
+Batch Size: 32
+
+Epochs: 30
+Early stopping after no improvement for 5 epochs
+
+Results:
+
+Achieved validation accuracy around 85-88% after hyperparameter tuning.
+Model overfitting reduced significantly by using dropout layers (0.5).
+The CNN served as a baseline for comparing more complex models.
+

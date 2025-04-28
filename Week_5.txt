@@ -1,0 +1,23 @@
+SOFTWARE AND HARDWARE REQUIREMENTS
+Software Requirements:
+
+Operating System: Windows/Linux/macOS
+
+Programming Language: Python 3.8+
+
+Libraries: TensorFlow, Keras, NumPy, Pandas, Matplotlib, Scikit-learn
+
+Tools: Jupyter Notebook, Google Colab (for GPU access)
+
+Hardware Requirements:
+
+Processor: Intel Core i5/i7 or equivalent
+
+RAM: Minimum 8 GB (16 GB recommended)
+
+GPU: NVIDIA GPU with CUDA support (e.g., GTX 1050 Ti or higher)
+
+Storage: At least 50 GB free space for datasets and models
+
+Modern deep learning models require substantial computational resources, especially during training. Cloud platforms like Google Colab and Kaggle Kernels offer free access to GPUs, making it feasible to train deep models without local GPU dependency.
+

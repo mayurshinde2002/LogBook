@@ -1,0 +1,40 @@
+IMPLEMENTATION OF THIRD MODULE (HYBRID CNN+LSTM and MobileNet)
+In this phase, two models were developed and evaluated:
+
+1. Hybrid CNN + LSTM Model:
+
+Architecture:
+
+CNN for spatial feature extraction
+Flatten layer output fed into LSTM layers
+Final dense layer for classification
+
+Purpose:
+
+To capture sequential patterns in feature maps, potentially improving performance.
+
+Results:
+
+Achieved around 90% validation accuracy.
+Slightly better generalization compared to standalone CNN.
+
+2. MobileNet Model:
+
+Architecture:
+Lightweight depthwise separable convolutions.
+
+Purpose:
+
+Enable fast and efficient model inference, suitable for mobile devices.
+
+Results:
+
+Achieved 88-90% validation accuracy.
+Significantly reduced model size and inference time compared to VGG16.
+
+Comparison and Final Selection:
+
+Best Accuracy: VGG16 (~94%)
+Best Lightweight Model: MobileNe
+Best Hybrid Model: CNN + LSTM (for complex sequential patterns)
+Thus, depending on application needs (high accuracy vs. lightweight deployment), suitable models can be selected.

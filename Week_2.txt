@@ -1,0 +1,18 @@
+PROBLEM STATEMENT AND OBJECTIVE OF WORK
+
+Problem Statement:
+
+Manual diagnosis of brain tumors through MRI analysis is a laborious task
+requiring significant expertise. Misdiagnosis or delayed detection can lead to fatal outcomes.
+The variability in tumor size, shape, and location further complicates the diagnostic process.
+
+
+
+Objectives:
+
+To develop a machine learning-based system capable of classifying MRI images into four tumor classes.
+To implement and compare four models: CNN, VGG16, Hybrid CNN+LSTM, and MobileNet.
+To apply effective data preprocessing and augmentation techniques to enhance model performance.
+To evaluate models rigorously using metrics like Accuracy, Precision, Recall, and F1-score.
+To select the best-performing model suitable for real-world deployment.
+The broader objective is to assist medical professionals, reduce diagnosis time, and improve overall diagnostic accuracy through AI-driven technology.
